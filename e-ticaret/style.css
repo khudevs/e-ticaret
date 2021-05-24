@@ -1,0 +1,261 @@
+/* yazı fontunu fontunun bulunduğu alan*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* css sıfırlamalarının yapıldığı alan */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none !important;
+  outline: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+/* menünün css kodları bu kısımda. css flex kullandım  */
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #222222;
+  padding: 16px;
+}
+
+nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav h4,
+nav a {
+  color: #fff;
+}
+
+nav .menu a {
+  padding: 12px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav .menu a:hover {
+  background: #fff;
+  color: #222222;
+}
+
+/* ürünler kısmının css kodlarının yazıldığı yer. burada sayfayı 3e böldüm ve eşit boşluklar halinde düzene soktum */
+
+.products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 48px;
+  margin: 48px;
+}
+
+.products .products-item {
+  padding: 16px;
+  border: 1px solid #ccc;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  place-self: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+.products .products-item img {
+  width: 100%;
+  margin-bottom: 24px;
+  min-height: 300px;
+}
+
+.products .products-item .product-header {
+  font-size: 20px;
+  color: #222222;
+  font-weight: bold;
+}
+
+.products .products-item .product-desc {
+  margin: 12px 0px;
+  font-size: 14.5px;
+  color: #2e2e2e;
+}
+
+.products .products-item .product-price {
+  margin-bottom: 12px;
+}
+
+.products .products-item .product-get {
+  background: #222222;
+  color: #fff;
+  padding: 4px;
+}
+
+/* ürün detay kısmının css kodları. sağ ve sol olarak ayrılmış şekilde */
+.urun-detay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 120px;
+}
+
+.urun-detay .urun-info {
+  margin-right: 72px;
+}
+
+.urun-detay .urun-info .urun-isim {
+  font-size: 48px;
+  margin-bottom: 48px;
+}
+
+.urun-detay .urun-info ul {
+  margin-top: 24px;
+}
+
+/* hakkımızda kısmının css kodları  */
+.hakkimizda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 200px 0px;
+}
+
+.hakkimizda h5 {
+  margin: 32px 0px;
+  font-size: 48px;
+}
+
+.hakkimizda p {
+  text-align: center;
+  margin: 0 72px;
+}
+
+.taksit {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+table {
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+table tr,
+table thead,
+table tbody,
+table td,
+table th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+/* en altta yer alan, menü linklerinin yer aldığı footer kısmı */
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 32px 0px;
+}
+
+.footer-menu a {
+  margin: 16px 0px;
+  color: #fff;
+}
+
+footer {
+  background: #222222;
+  padding: 32px;
+  text-align: center;
+  color: #fff;
+}
+
+/* iletişim kısmındaki form elemanlarının css kodları */
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+form input,
+form textarea {
+  width: 600px;
+  padding: 12px;
+  margin: 12px 0px;
+  border: 1px solid #ccc;
+}
+
+form a {
+  color: #fff;
+  background: #222222;
+  padding: 8px;
+  width: 600px;
+  border: 1px solid #222222;
+  text-align: center;
+}
+
+form a:hover {
+  background: #fff;
+  color: #222222;
+}
+
+/*# sourceMappingURL=style.css.map */

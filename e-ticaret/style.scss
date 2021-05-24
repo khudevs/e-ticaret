@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none !important;
+    outline: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222222;
+    padding: 16px;
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    h4,
+    a {
+        color: #fff;
+    }
+
+    .menu {
+        a {
+            padding: 12px;
+            text-decoration: none;
+            font-size: 14px;
+
+            &:hover {
+                background: #fff;
+                color: #222222;
+            }
+        }
+    }
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 48px;
+    margin: 48px;
+
+    .products-item {
+        padding: 16px;
+        border: 1px solid #ccc;
+        align-items: flex-start;
+        place-self: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+
+        img {
+            width: 100%;
+            margin-bottom: 24px;
+            min-height: 300px;
+        }
+
+        .product-header {
+            font-size: 20px;
+            color: #222222;
+            font-weight: bold;
+        }
+
+        .product-desc {
+            margin: 12px 0px;
+            font-size: 14.5px;
+            color: rgb(46, 46, 46);
+        }
+
+        .product-price {
+            margin-bottom: 12px;
+        }
+
+        .product-get {
+            background: #222222;
+            color: #fff;
+            padding: 4px;
+        }
+    }
+}
+
+.urun-detay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 120px;
+
+    .urun-info {
+        margin-right: 72px;
+
+        .urun-isim {
+            font-size: 48px;
+            margin-bottom: 48px;
+        }
+
+        ul {
+            margin-top: 24px;
+        }
+    }
+}
+
+.hakkimizda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 200px 0px;
+
+    h5 {
+        margin: 32px 0px;
+        font-size: 48px;
+    }
+
+    p {
+        text-align: center;
+        margin: 0 72px;
+    }
+}
+
+.taksit {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 48px;
+}
+
+table {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 40px;
+
+    tr,
+    thead,
+    tbody,
+    td,
+    th {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: center;
+    }
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 32px 0px;
+
+    a {
+        margin: 16px 0px;
+        color: #fff;
+    }
+}
+
+footer {
+    background: #222222;
+    padding: 32px;
+    text-align: center;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    min-height: 100vh;
+
+    input,
+    textarea {
+        width: 600px;
+        padding: 12px;
+        margin: 12px 0px;
+        border: 1px solid #ccc;
+    }
+
+    a {
+        color: #fff;
+        background: #222222;
+        padding: 8px;
+        width: 600px;
+        border: 1px solid #222222;
+        text-align: center;
+
+        &:hover {
+            background: #fff;
+            color: #222222;
+        }
+    }
+}
